@@ -1,18 +1,60 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url(./reset.css);
+@import url(./base.css);
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+input {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+textarea {
+    padding: 0;
+    resize: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.link {
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #f1f4fd;
+    background-color: #5172e0;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.link:hover {
+    transform: scale(105%);
+    background-color: #3445c5;
+}

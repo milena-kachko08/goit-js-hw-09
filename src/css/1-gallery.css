@@ -1,0 +1,30 @@
+@import url('./styles.css');
+
+.link {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.back-link:hover {
+    transform: scale(105%);
+    background-color: #3445c5;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 96px auto;
+    max-width: 1128px;
+}
+
+.gallery-image {
+    max-width: 360px;
+    transition: 0.5s;
+}
+
+.gallery-image:hover {
+    transform: scale(105%);
+}
