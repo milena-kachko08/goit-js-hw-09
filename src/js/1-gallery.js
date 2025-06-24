@@ -87,4 +87,4 @@ container.insertAdjacentHTML(
     .join('')
 );
 
-new SimpleLightBox('.gallery-link', { captionsData: 'alt', captionDelay: 250 });
+new SimpleLightbox('.gallery-link', { captionsData: 'alt', captionDelay: 250 });
